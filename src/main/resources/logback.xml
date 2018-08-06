@@ -1,0 +1,26 @@
+<configuration debug="false">
+	<appender name="STD_OUT" class="ch.qos.logback.core.ConsoleAppender">
+		<target>System.out</target>
+		<filter class="au.com.vishal.customerprofilemicroservice.controller.util.LogLevelFilter"/>
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger - %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<appender name="STD_ERR" class="ch.qos.logback.core.ConsoleAppender">
+		<target>System.err</target>
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>WARN</level>
+		</filter>
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger - %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<logger name="au.com.vishal" level="info"/>
+	
+	<root level="info">
+		<appender-ref ref="STD_OUT"/>
+		<appender-ref ref="STD_ERR"/>
+	</root>
+</configuration>

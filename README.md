@@ -13,15 +13,15 @@ Java JRE version 1.8
 Apache Maven version 3.3.9 or above.
 
 # Installing
-1.Download and Install JRE from http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html. 
-  1.1 Add JAVA_HOME variable in the Windows environment and point it to your Java/JRE folder 
-  1.2 Update PATH variable, append JRE bin folder. 
-  1.3 For verification run 'java -version' command in the command prompt
-2. Download Apache Maven from https://maven.apache.org/download.cgi. 
-  2.1 Add both M2_HOME and MAVEN_HOME variables in the Windows environment, and point it to your Maven folder. 
-  2.2 Update PATH variable, append Maven bin folder – %M2_HOME%\bin, so that you can run the Maven’s command everywhere. 
-  2.3 For verification run 'mvn –version' in the command prompt.
-3. Download and save this Microservice application in the File system.
+1. Download and Install JRE from http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html. 
+2. Add JAVA_HOME variable in the Windows environment and point it to your Java/JRE folder 
+3. Update PATH variable, append JRE bin folder. 
+4. For verification run 'java -version' command in the command prompt
+5. Download Apache Maven from https://maven.apache.org/download.cgi. 
+6. Add both M2_HOME and MAVEN_HOME variables in the Windows environment, and point it to your Maven folder. 
+7. Update PATH variable, append Maven bin folder – %M2_HOME%\bin, so that you can run the Maven’s command everywhere. 
+8. For verification run 'mvn –version' in the command prompt.
+9. Download and save this Microservice application in the File system.
 
 # Running
 1. Open Command prompt and change the current working directory to Microservice's Root Directory

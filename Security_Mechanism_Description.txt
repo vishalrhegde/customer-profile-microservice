@@ -1,0 +1,14 @@
+Security Mechanism
+
+1. For HTTPS, Import signed security certificates in to the truststore and pass this truststore as part of java run time args.
+2. Use Spring Security libraries to Authenticate the incoming HTTPS requests
+3. For Authentication, I have added SecurityConfig class to configure Web security and Http security in the current solution.
+4. Encoded (Base64 or other encoders as per Company's security policy) Username and Password is read from request header. This is decoded on the server side and  we can use LDAP or Active Directory for authentication.
+5. The End points (APIs) are made available in some kind of 'API Authorisation portal' or 'API Authorisation service' for subscription by different Clients. 
+6. For each Client a 'client-api-key' gets generated for each successful end-point subscription.
+7. This 'client-api-key' is passed as part of request header for each request.
+8. After successful Authentication, the solution reads this api-key and calls 'API Authorisation service' to validate the requested resource with the api-key.
+9. If Authorisation is successful, then the request is sent to the Controller layer.
+
+
+ 
